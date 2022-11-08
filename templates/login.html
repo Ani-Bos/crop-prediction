@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+<!-- <a href="https://front.codes/" class="logo" target="_blank">
+    <img src="Group3.png" alt="">
+</a> -->
+
+ <!-- navigation -->
+<div class="navigation max-width-1 m-auto ">
+    <div class="left">
+        <span><img src="Group 3.png" alt="" srcset=""></span>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="predictor.html">Predictor</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="login.html">Login/Sign In</a></li> -->
+            <li><a href="team1.html">Team</a></li>
+
+        </ul>
+    </div>
+
+</div>
+<!-- navigation -->
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <p>LOGIN/SIGN IN</p>
+            <div id="formPad">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required />
+                <p class="errMsg"></p>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required />
+                <p class="errMsg"></p>
+                <!-- <input type="number" name="Mobile" id="phone" placeholder="Mobile Number"> -->
+                <input type="tel" name="Mobile" id="phone" placeholder="Mobile Number">
+
+                <input type="tel" name="OTP" id="OTP" placeholder="Enter Your OTP" required />
+                <p class="errMsg"></p>
+                <!-- <input type="email" name="email" id="email" placeholder="Email Address"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                <p class="errMsg"></p> -->
+                <!-- <input type="tel" name="OTP" id="OTP" placeholder="Enter your OTP"> -->
+                <!-- <input type="password" name="password" id="password" placeholder="Password" required />
+                <p class="errMsg"></p> -->
+                <input type="submit" value="Sign In" id="submit" />
+                <p>
+                    By clicking the button, I am agreeing to the
+                    <a href="#">Terms of Services </a> and <a href="#"> Privacy policy</a>
+                </p>
+            </div>
+        </form>
+    </main>
+    <script src="firebaseconfig.js"></script>
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBUaN3QGtPg92VMBWF8pMLxtOdJxvhSfDA",
+    authDomain: "crop-prediction-e65ef.firebaseapp.com",
+    projectId: "crop-prediction-e65ef",
+    storageBucket: "crop-prediction-e65ef.appspot.com",
+    messagingSenderId: "810673134058",
+    appId: "1:810673134058:web:2ded25d5bad469aac27a93",
+    measurementId: "G-EJTCLKCKCB"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>
